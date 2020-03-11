@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  
+  <div class="weather">
+    <!-- 系统状态栏 -->
+    <div class="system"></div>
+    <div class="weather-box">
+      <!-- 导航标题 -->
+      <div class="nav">
+        <div class="nav-box fl">
+          <span class="city fl"></span>
+          <span class="menu fl"></span>
+        </div>
+
+        <div class="search fl">
+          <input class="fl search-box" type="text">
+          <span class="fl search-icon"></span>
+        </div>
+        
+      </div>
+
+      <!-- 实况天气 -->
+      <div class="weather-status">
+        <div class="weather-tem"></div>
+        <div class="min-max">
+          <span class="qing">
+            <span class="w-status"></span>
+            <span class="tmp"></span>
+          </span>
+        </div>
+      </div>
+
+       <!-- 风向、可见度、湿度 -->
+       <div class="wind-box">
+        <div class="wind-list clearfix">
+          <div data-name="wind_sc" data-title="wind_dir">
+            <div class="text">
+              <div class="wind_sc"></div>
+              <div class="wind_dir"></div>
+            </div>
+            <i class="line"></i>
+          </div>
+          <div data-name="vis">
+            <div class="text">
+              <div class="vis"></div>
+              <div>可见度</div>
+            </div>
+            <i class="line"></i>
+          </div>
+          <div data-name="hum">
+            <div class="text">
+              <div>
+                <span class="hum"></span><span>%</span>
+              </div>
+              <div>湿度</div>
+            </div>
+          </div>
+        </div>
+        <div class="yubao"></div>
+      </div>
+
+      <!-- 逐日、逐时 -->
+      <div class="day-hour-box">
+        <div class="day-hour">
+          <div class="fl" data-fn="dailyForecastWeather">
+            <span>逐日预报</span>
+          </div>
+          <div class="fl" data-fn="hourlyForecastWeather">
+            <span>逐时预报</span>
+          </div>
+          <div class="move-line"></div>
+        </div>
+        <div class="weather-data">
+          <div class="weather-data-box clearfix">
+
+            
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./js/rem.js"></script>
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
